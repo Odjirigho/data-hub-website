@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+    * {
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /*font-family: "Poppins", sans-serif;*/
+    }
+    
+    body {
+        margin: 0%;
+        height: 0%;
+        background: #e6e6e6;
+    }
+    /** THE TOP BAR **/
+    
+    #sec1-top {
+        width: 100%;
+        height: 20%;
+        margin: auto;
+    }
+    
+    #topNav {
+        width: 100%;
+        height: 10%;
+        justify-content: space-between;
+        align-items: center;
+        display: inline-flex;
+        margin: auto;
+        padding-top: 45px;
+        padding-bottom: 90px;
+        background: #ff6600;
+    }
+    
+    #topNav a {
+        margin-inline-end: 60px;
+        margin: auto;
+        color: #fff;
+        font-size: 25px;
+        scroll-behavior: smooth;
+    }
+    
+    #topNav h1 {
+        color: #fff;
+    }
+    /**SIDE NAV BAR**/
+    
+    nav {
+        width: 233px;
+        height: 100%;
+        background: #fff;
+        border: 2px solid #ff6600;
+        overflow: hidden;
+        transition: 5s;
+        position: fixed;
+        z-index: 1;
+        display: none;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    /* nav:hover {
+        width: 233px;
+    } */
+    
+    nav ul {
+        width: 100%;
+        height: 100%;
+        display: table;
+        position: relative;
+        scroll-behavior: smooth;
+    }
+    
+    nav ul li {
+        display: table;
+        justify-content: space-between;
+        align-items: end;
+        transition: all .77s ease;
+        scroll-behavior: smooth;
+        transition: all .55s ease;
+    }
+    
+    nav ul li a {
+        color: #000;
+        display: table;
+        text-transform: capitalize;
+        text-decoration: none;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        position: relative;
+        scroll-behavior: smooth;
+        transition: all .55s ease;
+    }
+    
+    nav ul li a:hover {
+        color: #fff;
+    }
+    
+    nav ul li:hover {
+        background: #ff6600;
+        color: #fff;
+        position: static;
+        scroll-behavior: smooth;
+    }
+    
+    nav ul li a i {
+        font-size: 30px;
+        padding-left: 20px;
+        display: table;
+        width: 100%;
+        height: 100%;
+        color: #000;
+        position: relative;
+        transition: all .55s ease;
+    }
+    
+    nav ul li i:hover {
+        color: #fff;
+    }
+    
+    nav p {
+        width: 30px;
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 20px;
+        margin-left: 15px;
+        color: #1b1b1b;
+        padding-top: 15px;
+    }
+    
+    nav span {
+        position: relative;
+        margin-left: 106px;
+        width: 100%;
+        padding-right: 70px;
+    }
+    
+    nav h2 {
+        color: #fff;
+        text-transform: capitalize;
+        padding-bottom: 12px;
+        font-weight: 700;
+        margin-left: 10px;
+        width: 100%;
+        height: 100%;
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    nav h1 {
+        color: #ff6600;
+        margin-left: 10px;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    #navWelcome {
+        background: #ff6600;
+        padding: 10px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    
+    .closebtn {
+        background: none;
+        border: none;
+        font-size: 25px;
+        color: #fff;
+    }
+    
+    .move {
+        position: static;
+        scroll-behavior: smooth;
+    }
+    
+    .smooth {
+        scroll-behavior: smooth;
+        transition: all .55s ease-in-out;
+    }
+    
+    #user i {
+        color: #fff;
+        padding: 20px;
+        border-radius: 50%;
+        font-size: 60px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .prfile {
+        overflow: hidden;
+        height: 120%;
+    }
+    
+    #light {
+        transition: all .55s ease;
+        transition-delay: 99px;
+    }
+    /** SECTION 2 BALANCE**/
+    
+    #sec2-ballance {
+        width: 95%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-radius: 10px;
+        border: 2px solid #ff6600;
+        overflow: hidden;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 13px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+    
+    #ballance {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .line {
+        color: #ff6600;
+        font-size: 20px;
+        margin: auto;
+        padding-left: 25px;
+        text-align: center;
+    }
+    
+    #ballance h3 {
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        color: #000;
+        text-transform: capitalize;
+    }
+    
+    .i {
+        display: inline-flex;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        color: #000;
+        font-size: 19px;
+    }
+    
+    .i i {
+        margin-left: 20px;
+        margin-top: 5px;
+        font-size: 30px;
+    }
+    
+    #funding {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #funding i {
+        display: inline-flex;
+        padding-left: 70px;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        margin: auto;
+        width: auto;
+        color: #000;
+        transition: all .55s ease;
+    }
+    
+    #funding i:hover {
+        transform: translateY(5px);
+    }
+    
+    #funding-text {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #funding-text p {
+        color: #000;
+        font-size: 14px;
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        padding-left: 35px;
+        margin: auto;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        text-transform: capitalize;
+    }
+    
+    #ballance h3 {
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        color: #ff6600;
+        text-transform: capitalize;
+    }
+    
+    .i {
+        display: inline-flex;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        color: #ff6600;
+    }
+    
+    #funding {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #funding i {
+        display: inline-flex;
+        padding-left: 50px;
+        padding-right: 50px;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        margin: auto;
+        width: auto;
+        color: #ff6600;
+        transition: all .55s ease;
+    }
+    
+    #funding i:hover {
+        font-size: 27px;
+        transform: translateY(5px);
+    }
+    
+    #funding-text {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .text {
+        width: 100%;
+        height: 100%;
+        text-transform: capitalize;
+        display: flex;
+    }
+    
+    .text p {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        margin-left: 20px;
+        font-size: 15px;
+        justify-content: space-between;
+        text-align: center;
+        color: #ff6600;
+        padding-top: 14px;
+    }
+    /**SECTION 3**/
+    
+    #sec3 {
+        width: 92%;
+        height: 100%;
+        margin-left: 10PX;
+        margin-right: 10px;
+    }
+    
+    #cashback {
+        margin-top: 40px;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 10px;
+        border: 2px solid #ff6600;
+        overflow: hidden;
+    }
+    
+    #cashback h2 {
+        color: #ff6600;
+        padding-bottom: 20px;
+        text-transform: capitalize;
+        margin: auto;
+        padding-left: 7px;
+    }
+    
+    #cashback p {
+        color: #ff6600;
+        font-size: 15px;
+        padding-left: 7px;
+    }
+    /*SECTOIN 4*/
+    
+    #sec4 {
+        width: 92%;
+        height: 100%;
+        border: 2px solid #ff6600;
+        border-radius: 10px;
+        margin-top: 25px;
+        scroll-behavior: smooth;
+        scroll-timeline: 0.22s;
+        transition: all .55s ease;
+        margin-left: 10PX;
+        margin-right: 10px;
+    }
+    
+    #services {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #services h1 {
+        color: #fff;
+        margin: 20px;
+        text-transform: capitalize;
+        font-size: 30px;
+    }
+    
+    #first-payments {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .btn {
+        height: 100%;
+        width: 100;
+    }
+    
+    #first-payments p {
+        color: #fff;
+        font-size: 19px;
+        margin-left: 20px;
+    }
+    
+    #first-payments button {
+        color: #fff;
+        font-size: 19px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background: #ff6600;
+        padding: 20px;
+        border: none;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        transition: all .55s ease;
+    }
+    
+    #first-payments button:hover {
+        transform: scaleY(5px);
+        background: #ffff;
+        color: #ff6600;
+    }
+    /*SECTION 5 */
+    
+    #sec5 {
+        width: 92%;
+        height: 100%;
+        margin-left: 10PX;
+        margin-right: 10px;
+    }
+    
+    #transactions {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #transactions h1 {
+        color: #fff;
+        text-transform: capitalize;
+        margin: 20px;
+        font-size: 30px
+    }
+    
+    #transactions p {
+        color: #ff6600;
+        text-decoration: none;
+        margin-left: 30px;
+        height: 100%;
+        font-size: 19px;
+    }
+    
+    #mtnslot {
+        width: 97%;
+        background: #ff6600;
+        justify-content: center;
+        align-items: center;
+        display: content;
+        color: #fff;
+        border-radius: 10px;
+        margin-left: 12px;
+        box-shadow: 5px 3px 20px #ff6600;
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+    
+    #mtnslot i {
+        font-size: 40px;
+        padding-top: 15px;
+        margin-left: 20px;
+    }
+    
+    #mtnslot h2 {
+        padding-top: 15px;
+        margin-left: 15px;
+    }
+    
+    #mtnslot p {
+        padding-top: 10px;
+        text-transform: capitalize;
+        margin-left: 20px;
+        padding-bottom: 10px;
+        color: #fff;
+    }
+    
+    #show {
+        display: none;
+    }
+    /*SECTION 6*/
+    
+    #sec6 {
+        width: 90%;
+        height: 0%;
+        border: 2px solid #fff;
+        background: #ff6600;
+        border-radius: 10px 10px 0px 0px;
+        position: absolute;
+        bottom: 0%;
+        top: 199%;
+        justify-content: end;
+        overflow: hidden;
+        opacity: 0;
+        transition: all .55s ease;
+    }
+    
+    #sec6 h2 {
+        color: #fff;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+    
+    @keyframes identifier {
+        from {
+            transform: scaleX(0);
+        }
+        to {
+            transform: scaleY(-1000px);
+        }
+    }
+    
+    #sec6 p {
+        color: #fff;
+        font-size: 20px;
+        padding-bottom: 5px;
+        text-transform: capitalize;
+        padding-top: 15px;
+    }
+    
+    #sec6 input {
+        border: transparent;
+        background: transparent;
+        color: #fff;
+        padding-bottom: 15px;
+        width: 100%;
+        outline: none;
+    }
+    
+    #sec6 label {
+        color: #fff;
+        text-transform: capitalize;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        transform: translateY(-30%);
+    }
+    
+    #sec6 #p-c {
+        width: 100%;
+        height: 100%;
+        display: inline-flex;
+    }
+    
+    #sec6 #p-c label {
+        width: 100%;
+        height: 100%;
+        padding-left: 30px;
+    }
+    
+    #in {
+        width: 100%;
+        display: block;
+    }
+    
+    #in input {
+        width: 90%;
+        margin-left: 30px;
+        border-bottom: 2px solid#fff;
+        margin-bottom: 30px;
+        background: #fff;
+        border-radius: 5px;
+        color: #ff6600;
+        font-size: 16px;
+        border: none;
+        height: 0%;
+    }
+    
+    #btu {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #btu button {
+        padding: 20px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-left: 27px;
+        background: #ff6600;
+        border: 2px solid #fff;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        transition: all .55s ease;
+    }
+    
+    #btu a {
+        text-decoration: none;
+    }
+    
+    #btu button:hover {
+        color: #ff6600;
+        background: #fff;
+    }
+    
+    @media screen and (max-width: 700px) {
+        #sec2-ballance {
+            width: 90%;
+            height: 100%;
+        }
+    }
+</style>
+
+<body id="body">
+    <section id="theNav">
+        <nav id="nav">
+            <div id="user">
+                <i class='bx bx-user'></i>
+            </div>
+
+            <div id="navWelcome">
+                <button class="closebtn" onclick="menuoff()">&times;</button>
+                <h2>balance</h2>
+                <h1>N12.00</h1>
+            </div>
+            <div ondrag="drag()">
+                <ul id="move">
+                    <p id="title">menu</p>
+
+                    <li><a href="./data hub me.html"><i class='bx bx-home-heart'></i><span>home</span></a></li>
+                    <li class="smooth"><a href="#sec4" class="smooth"><i class='bx bxs-customize'></i><span>our services</span></a></li>
+                    <li><a href="###"><i class='bx bxs-user-account'></i><span>becomereseller</span></a></li>
+                    <li><a href="###"><i class='bx bx-user-pin'></i> <span>refer & earn</span></a></li>
+                    <li><a href="###"><i class='bx bx-info-circle'></i> <span>about</span></a></li>
+
+                    <p>others</p>
+
+                    <li id="profile"><a href="###"><i class='bx bx-user'></i><span>profile</span></a>
+                        <button onclick="lightmode()" id="light"> Light mode</button>
+                        <button onclick="darkmode()" id="dark"> Dark mode</button>
+                    </li>
+
+                    <li><a href="###"><i class='bx bx-question-mark'></i><span>FAQS</span></a></li>
+                    <li><a href="###"><i class='bx bx-chat'></i><span>our blog</span></a></li>
+                    <li><a href="./email-contact page.html"><i class='bx bxl-whatsapp'></i><span>contact us</span></a></li>
+                    <li><a href="###"><i class='bx bx-log-out'></i><span>log out</span></a></li>
+                    <li><a href="###"><i class='bx bx-log-in'></i><span>log in</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <div id="bodo" onclick="bobo()">
+
+        <section id="sec1-top">
+            <div id="topNav">
+                <a href="#theNav"><i onclick="menu()" id="menuBar" class='bx bx-menu'></i></a>
+                <h1>DATA-HUB</h1>
+                <a href=""><i class='bx bx-bell-plus'></i></a>
+            </div>
+        </section>
+
+        <section id="sec2-ballance">
+            <div id="ballance">
+                <h3>wallet ballance</h3>
+                <div class="i">
+                    <h2 id="wallet">₦12.00</h2>
+                    <p id="wallet"></p>
+                    <i class='bx bx-hide' onclick="eye(this)"></i>
+                </div>
+
+                <p class="line">___________________________</p>
+            </div>
+            <div>
+                <div id="funding">
+
+                    <a href="#"> <i class='bx bx-plus-circle'></i></a>
+                    <a href="###"><i class='bx bx-right-arrow-alt'></i></a>
+                    <a href="###"><i class='bx bx-bar-chart-alt'></i><br></a>
+
+                </div>
+
+                <div class="text">
+                    <p>Fund Wallet</p>
+                    <p>Transfer</p>
+                    <p>Business</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="sec3">
+            <div id="cashback">
+                <h2>MTN SME Cashack</h2>
+                <p>you will earn N5 per MTN SME GB sale</p>
+            </div>
+
+        </section>
+
+        <section id="sec4">
+            <div id="services">
+                <h1>our services</h1>
+
+                <div id="first-payments">
+
+
+                    <div class="btn">
+                        <p>airtime topup</p>
+                        <a href="#sec6"><button onclick="showTopup()">buy now</button></a>
+                    </div>
+
+                    <div class="btn">
+                        <p>mobile data</p>
+                        <button>buy now</button>
+                    </div>
+
+
+
+                    <div class="btn">
+                        <p>TV payment</p>
+                        <button>buy now</button>
+                    </div>
+
+
+
+                    </br>
+
+                    <div class="btn">
+                        <p>Est payment</p>
+                        <button>buy now</button>
+                    </div>
+
+
+                    <div class="btn">
+                        <p>Dstv payment</p>
+                        <button>buy now</button>
+                    </div>
+
+
+
+                    <div class="btn">
+                        <p>Gotv payment</p>
+                        <button>buy now</button>
+                    </div>
+
+
+                    </br>
+
+
+                    <div class="btn">
+                        <p>Dish server</p>
+                        <button>buy now</button>
+                    </div>
+
+
+
+                    <div class="btn">
+                        <p>Stong server</p>
+                        <button>buy now</button>
+                    </div>
+
+
+
+                </div>
+        </section>
+
+        <section id="sec5">
+            <div id="transactions">
+                <h1>Transactions</h1>
+                <p onclick="view()" id="open">view all</p>
+                <p id="close" onclick="viewoff()"></p>
+
+                <div id="mtnslot">
+                    <i class='bx bx-task'></i>
+                    <h2>MTN SM 1GB</h2>
+                    <p>transaction succeccful</p>
+                </div>
+
+                <div id="mtnslot">
+                    <i class='bx bx-task'></i>
+                    <h2>GLO SM 1GB</h2>
+                    <p>transaction succeccful</p>
+                </div>
+
+
+                <div id="show">
+
+                    <div id="mtnslot">
+                        <i class='bx bx-task'></i>
+                        <h2>9MOBILE SM 1GB</h2>
+                        <p>transaction succeccful</p>
+                    </div>
+
+                    <div id="mtnslot">
+                        <i class='bx bx-task'></i>
+                        <h2>AIRTEL SM 1GB</h2>
+                        <p>transaction succeccful</p>
+                    </div>
+
+                    <div id="mtnslot">
+                        <i class='bx bx-task'></i>
+                        <h2>ETISALAT SM 1GB</h2>
+                        <p>transaction succeccful</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <section id="sec6">
+            <div id="airtimeTopup">
+                <h2>buy mobile data</h2>
+                <p>&times;</p>
+                <hr>
+                <p>network</p>
+                <input type="text" placeholder="Choose network frist" required>
+                <hr>
+                <h3>available plans</h3>
+                <hr>
+                <div id="in">
+                    <label>phone number</label>
+                    <input type="tel" id="customerNo" placeholder="Reciitant.No">
+
+                    <label>cost price</label>
+                    <input type="tel" id="customerPrice" placeholder="Min.of N50">
+
+                    <label>discount</label>
+                    <input type="tel" id="customerDiscount" placeholder="Customer discount">
+                </div>
+
+                <div id=>
+
+                    <a href=" ">take a phone number from customer list</a>
+
+                    <div id="btu">
+                        <a href=" "><button onclick="airTime()">Buy Now</button></a>
+                    </div>
+                </div>
+        </section>
+
+
+
+        <!-- 
+        <i class='bx bx-paperclip'></i>
+
+        <box-icon name="rocket "></box-icon>
+        <box-icon color="white " type="solid " name="rocket "></box-icon>
+        <box-icon type="logo " name="facebook-square "></box-icon>
+
+        <pre></pre>
+        <param name="name " value="tel ">
+        <progress aria-setsize="30px "> </progress> -->
+
+
+        <script>
+            function eye(b) {
+                var balVal = document.getElementById("wallet").innerHTML;
+                var bal = document.getElementById("wallet");
+                if (balVal == "₦12.00") {
+                    bal.innerHTML = "* * * *";
+                    b.classList.toggle('bx bx-bell-plus');
+                } else {
+                    bal.innerHTML = "₦12.00";
+                    x.classList.toggle("bx bx-hide")
+                }
+            }
+
+            function menu() {
+                var nav = document.getElementById("nav");
+                document.getElementById("nav").style.display = "block";
+                document.getElementById("bodo").style.opacity = "0.50";
+                document.getElementById("nav").style.opacity = " 1 "
+                document.getElementById("nav").style.transition = "0.77s";
+                document.getElementById("nav").style.position = "fixed";
+                document.getElementById("nav").content.style.opacity = "1";
+                document.getElementById("nav").style.opacity = "1";
+                document.getElementById("nav").style.marginLeft = "50px";
+                document.getElementById("bodo").style.zIndex = "-1";
+
+
+            }
+
+            function menuoff() {
+                var navOff = document.getElementById("nav");
+
+                if (navOff) {
+                    document.getElementById("nav").style.display = "none";
+                }
+                var body = document.getElementById("bodo").style.opacity = "1";
+
+            }
+
+            function drag() {
+                var slide = document.getElementById("move").style.position = "relative";
+
+            }
+
+
+            function view() {
+                var show1 = document.getElementById("show").style.display = "block";
+                show2 = document.getElementById("close").innerHTML = "view none";
+                show2 = document.getElementById("open").style.display = "none"
+                show2 = document.getElementById("show").style.display = "block"
+
+
+            }
+
+            function viewoff() {
+                show2 = document.getElementById("close").innerHTML = "view none";
+                show2 = document.getElementById("open").style.display = "block";
+                show2 = document.getElementById("show").style.display = "none";
+
+
+            }
+
+            function airTime() {
+                var number = document.getElementById("customerNo").value;
+                var price = document.getElementById("customerPrice").value;
+                confirm("you are about to purchase N" + price + " to this " + number + " number ");
+
+            }
+
+
+            function showTopup() {
+                document.getElementById("sec6").style.opacity = "1";
+                document.getElementById("sec6").style.transit = "0.55s";
+                //showTop.style.position = "fixed";
+                //document.getElementById("")
+                document.getElementById("sec6").style.height = "100%"
+                document.getElementById("bodo").style.opacity = "0.50";
+                document.getElementById("sec6").style.width = "99%";
+                document.getElementById("sec6").style.paddingBottom = "0%"
+            }
+
+            function bobo1() {
+                var showTop = document.getElementById("sec6").style.display = "none";
+            }
+
+            // function bobo() {
+            //     var showtop = document.getElementById("sec6").style.display = "none"
+            // }
+
+            function cost() {
+                var discount = doucument.getElementById("customerDiscount").value;
+                var price = document.getElementById("customerPrice").value;
+                discount;
+            }
+
+            function lightmode() {
+                document.getElementById("body").style.backgroundColor = "#999";
+                document.getElementById("body").style.color = "red";
+                document.getElementById("sec4").style.textEmphasisColor = "red"
+            }
+
+            //
+        </script>
+
+
+
+
+
+</body>
+
+</html>
+
+</html>

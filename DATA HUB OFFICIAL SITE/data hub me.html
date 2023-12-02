@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><img src="https://www.actian.com/wp-content/uploads/2019/10/DC22-H.jpg" alt=""> DATA-HUB-DASHBOARD </title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Start of Async Drift Code -->
+    <script>
+        "use strict";
+
+        ! function() {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function(e) {
+                        return function() {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function(e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function(t) {
+                        var e = 3e5,
+                            n = Math.ceil(new Date() / e) * e,
+                            o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('2nik5zrkgzh8');
+    </script>
+    <!-- End of Async Drift Code -->
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+    * {
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /*font-family: "Poppins", sans-serif;*/
+    }
+    
+    body {
+        margin: 0%;
+        height: 0%;
+        background: #1b1b1b;
+    }
+    /**BLOCKER ADD**/
+    
+    #blocker {
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    /** THE TOP BAR **/
+    
+    #sec1-top {
+        width: 100%;
+        height: 20%;
+        margin: auto;
+    }
+    
+    #topNav {
+        width: 100%;
+        height: 10%;
+        justify-content: space-between;
+        align-items: center;
+        display: inline-flex;
+        margin: auto;
+        padding-top: 45px;
+        padding-bottom: 90px;
+        background: #333333;
+    }
+    
+    #topNav a {
+        margin-inline-end: 60px;
+        margin: auto;
+        color: #fff;
+        font-size: 25px;
+        scroll-behavior: smooth;
+    }
+    
+    #topNav h1 {
+        color: #fff;
+    }
+    /**SIDE NAV BAR**/
+    
+    nav {
+        width: 0px;
+        height: 100%;
+        background: #333333;
+        border: 1px solid #ff6600;
+        overflow: hidden;
+        transition: 3.5s;
+        position: fixed;
+        z-index: 0;
+        display: none;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        -webkit-text-stroke: none;
+        -webkit-text-stroke-color: none;
+    }
+    
+    nav ul {
+        width: 100%;
+        height: 100%;
+        display: table;
+        position: relative;
+        scroll-behavior: smooth;
+    }
+    
+    nav ul li {
+        display: table;
+        justify-content: space-between;
+        align-items: end;
+        transition: all .77s ease;
+        scroll-behavior: smooth;
+        transition: all .55s ease;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        display: table;
+        text-transform: capitalize;
+        text-decoration: none;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        position: relative;
+        scroll-behavior: smooth;
+        transition: all .55s ease;
+    }
+    
+    nav ul li:hover {
+        background: #ff6600;
+        color: #fff;
+        position: static;
+        scroll-behavior: smooth;
+        transition: all .55s ease;
+    }
+    
+    nav ul li a i {
+        font-size: 30px;
+        padding-left: 20px;
+        display: table;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        position: relative;
+    }
+    
+    nav p {
+        width: 30px;
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 20px;
+        margin-left: 15px;
+        color: #1b1b1b;
+        padding-top: 15px;
+    }
+    
+    nav span {
+        position: relative;
+        margin-left: 106px;
+        width: 100%;
+        padding-right: 70px;
+    }
+    
+    nav h2 {
+        color: #fff;
+        text-transform: capitalize;
+        padding-bottom: 12px;
+        font-weight: 700;
+        margin-left: 10px;
+        width: 100%;
+        height: 100%;
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    nav h1 {
+        color: #fff;
+        margin-left: 10px;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    #navWelcome {
+        background: #ff6600;
+        padding: 10px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    
+    #navWelcome a {
+        margin-left: 30px;
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .closebtn {
+        background: none;
+        border: none;
+        font-size: 25px;
+        color: #fff;
+    }
+    
+    .move {
+        position: static;
+        scroll-behavior: smooth;
+    }
+    
+    .smooth {
+        scroll-behavior: smooth;
+        transition: all .55s ease-in-out;
+    }
+    
+    #user i {
+        color: #fff;
+        padding: 20px;
+        border-radius: 50%;
+        font-size: 60px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .prfile {
+        overflow: hidden;
+        height: 120%;
+    }
+    
+    #light {
+        transition: all .55s ease;
+        transition-delay: 99px;
+    }
+    /** SECTION 2 BALANCE**/
+    
+    #sec2-ballance {
+        width: 90%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #ff6600;
+        border-radius: 10px;
+        overflow: hidden;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 19px;
+        margin-right: 13px;
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+    
+    #ballance {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .line {
+        color: #fff;
+        font-size: 20px;
+        margin: auto;
+        padding-left: 25px;
+        text-align: center;
+    }
+    
+    #ballance h3 {
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        color: #fff;
+        text-transform: capitalize;
+    }
+    
+    .i {
+        display: inline-flex;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        color: #fff;
+        font-size: 19px;
+    }
+    
+    .i i {
+        margin-left: 20px;
+        margin-top: 5px;
+        font-size: 30px;
+    }
+    
+    #funding {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #funding i {
+        display: inline-flex;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 15px 15px 10px 15px;
+        width: auto;
+        color: #ff6600;
+        transition: all .55s ease;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        background: #fff;
+    }
+    
+    #funding i:hover {
+        transform: translateY(-2px);
+        background: #ff6600;
+        color: #fff;
+    }
+    
+    #funding-text {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #funding-text p {
+        color: #fff;
+        font-size: 14px;
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        padding-left: 35px;
+        margin: auto;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        text-transform: capitalize;
+    }
+    
+    #ballance h3 {
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        color: #fff;
+        text-transform: capitalize;
+    }
+    
+    .i {
+        display: inline-flex;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        color: #fff;
+    }
+    
+    #funding {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #funding i:hover {
+        font-size: 27px;
+        transform: translateY(5px);
+    }
+    
+    #funding-text {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .text {
+        width: 100%;
+        height: 100%;
+        text-transform: capitalize;
+        display: flex;
+    }
+    
+    .text p {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        margin-left: 20px;
+        font-size: 15px;
+        justify-content: space-between;
+        text-align: center;
+        color: #fff;
+        padding-top: 14px;
+    }
+    /**SECTION 3**/
+    
+    #sec3 {
+        width: 90%;
+        height: 100%;
+        margin-left: 19PX;
+        margin-right: 25px;
+    }
+    
+    #cashback {
+        margin-top: 40px;
+        background: #ff6600;
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    #cashback h2 {
+        color: #fff;
+        padding-bottom: 20px;
+        text-transform: capitalize;
+        margin: auto;
+        padding-left: 7px;
+    }
+    
+    #cashback p {
+        color: #fff;
+        font-size: 15px;
+        padding-left: 7px;
+    }
+    
+    #cashback input {
+        width: 90%;
+        height: 0%;
+        margin: 0px 10px 0px 18px;
+        border: none;
+    }
+    /*SECTOIN 4*/
+    
+    #sec4 {
+        width: 92%;
+        height: 100%;
+        border: 2px solid #ff6600;
+        border-radius: 10px;
+        margin-top: 25px;
+        scroll-behavior: smooth;
+        scroll-timeline: 0.22s;
+        transition: all .55s ease;
+        margin-left: 19PX;
+        margin-right: 25px;
+        background: #33333344;
+    }
+    
+    #services {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #services h1 {
+        color: #fff;
+        margin: 20px;
+        text-transform: capitalize;
+        font-size: 30px;
+    }
+    
+    #first-payments {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .btn {
+        height: 100%;
+        width: 100;
+    }
+    
+    #first-payments p {
+        color: #fff;
+        font-size: 19px;
+        /* margin-left: 25px; */
+        text-align: center;
+    }
+    
+    #first-payments button {
+        color: #fff;
+        font-size: 19px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background: #ff6600;
+        padding: 15px;
+        border: none;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        transition: all .55s ease;
+    }
+    
+    #first-payments button:hover {
+        transform: scaleY(5px);
+        background: #ffff;
+        color: #ff6600;
+    }
+    /*SECTION 5 */
+    
+    #sec5 {
+        width: 92%;
+        height: 100%;
+        margin-left: 10PX;
+        margin-right: 10px;
+    }
+    
+    #transactions {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .transac {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    
+    .transac p {
+        margin-top: 29px
+    }
+    
+    #transactions h1 {
+        color: #fff;
+        text-transform: capitalize;
+        margin: 20px;
+        font-size: 30px
+    }
+    
+    #transactions p {
+        color: #ff6600;
+        text-decoration: none;
+        margin-left: 30px;
+        height: 100%;
+        font-size: 19px;
+    }
+    
+    #mtnslot {
+        width: 98%;
+        height: 0%;
+        background: #ff6600;
+        justify-content: center;
+        align-items: center;
+        display: content;
+        color: #fff;
+        border-radius: 10px;
+        margin-left: 12px;
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+    
+    .smallmtn {
+        display: inline-flex;
+    }
+    
+    #mtnslot i {
+        font-size: 30px;
+        padding-top: 15px;
+        margin-left: 20px;
+    }
+    
+    #mtnslot h5 {
+        padding-top: 15px;
+        margin-left: 15px;
+        font-size: 25px;
+        font-weight: 900;
+    }
+    
+    #mtnslot p {
+        padding-top: 10px;
+        text-transform: capitalize;
+        margin-left: 20px;
+        padding-bottom: 10px;
+        color: #fff;
+        font-size: 16px;
+    }
+    
+    #show {
+        display: none;
+    }
+    /*SECTION 6*/
+    
+    #sec6 {
+        width: 90%;
+        height: 0%;
+        border: 2px solid #fff;
+        background: #ff6600;
+        border-radius: 20px 20px 0px 0px;
+        position: absolute;
+        bottom: 0%;
+        justify-content: end;
+        overflow: hidden;
+        opacity: 0;
+        transition: all .55s ease;
+        margin-left: 2px;
+        margin-right: px;
+    }
+    
+    #sec6 select {
+        outline: none;
+        width: 90%;
+        margin-left: 30px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        transition: all .55s ease-in-out;
+    }
+    
+    #sec6 select:hover {
+        height: 100%;
+    }
+    
+    #sec6 h2 {
+        color: #fff;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 22px;
+        padding-bottom: 2px;
+    }
+    
+    #sec6 p {
+        color: #fff;
+        font-size: 20px;
+        padding-bottom: 5px;
+        text-transform: capitalize;
+        padding-top: 15px;
+    }
+    
+    #sec6 input {
+        border: transparent;
+        background: transparent;
+        color: #fff;
+        padding-bottom: 15px;
+        width: 100%;
+        outline: none;
+        font-weight: bolder;
+    }
+    
+    #sec6 #p-c {
+        width: 100%;
+        height: 100%;
+        display: inline-flex;
+    }
+    
+    #in {
+        width: 100%;
+        display: block;
+    }
+    
+    #in input {
+        width: 90%;
+        margin-left: 30px;
+        border-bottom: 2px solid#fff;
+        margin-bottom: 30px;
+        background: #fff;
+        border-radius: 5px;
+        color: #000;
+        font-size: 16px;
+        border: none;
+        height: 0%;
+    }
+    
+    #btu {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #btu button {
+        padding: 20px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-left: 27px;
+        background: #ff6600;
+        border: 2px solid #fff;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        transition: all .55s ease;
+    }
+    
+    #btu a {
+        text-decoration: none;
+    }
+    
+    #btu button:hover {
+        color: #ff6600;
+        background: #fff;
+    }
+    /* MOBILE DATA */
+    
+    #sec6MobileData {
+        width: 90%;
+        height: 0%;
+        border: 2px solid #fff;
+        background: #ff6600;
+        border-radius: 20px 20px 0px 0px;
+        position: absolute;
+        bottom: 0%;
+        justify-content: end;
+        overflow: hidden;
+        opacity: 0;
+        transition: all .55s ease;
+        margin-left: 2px;
+        margin-right: px;
+    }
+    
+    #sec6MobileData select {
+        outline: none;
+        width: 90%;
+        margin-left: 30px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        transition: all .55s ease-in-out;
+    }
+    
+    #sec6MobileData h2 {
+        color: #fff;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 22px;
+        padding-bottom: 2px;
+    }
+    
+    #sec6MobileData p {
+        color: #fff;
+        font-size: 20px;
+        padding-bottom: 5px;
+        text-transform: capitalize;
+        padding-top: 15px;
+    }
+    
+    #sec6MobileData input {
+        border: transparent;
+        background: transparent;
+        color: #fff;
+        padding-bottom: 15px;
+        width: 100%;
+        outline: none;
+        font-weight: bolder;
+        width: 90%;
+        margin-left: 30px;
+        border-bottom: 2px solid#fff;
+        margin-bottom: 30px;
+        background: #fff;
+        border-radius: 5px;
+        color: #000;
+        font-size: 16px;
+        border: none;
+        height: 7%;
+    }
+    
+    #sec6MobileData #p-c {
+        width: 100%;
+        height: 100%;
+        display: inline-flex;
+    }
+    
+    #in {
+        width: 100%;
+        display: block;
+    }
+    
+    #btu {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #sec6MobileData button {
+        padding: 20px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-left: 27px;
+        background: #ff6600;
+        border: 2px solid #fff;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        transition: all .55s ease;
+    }
+    
+    #btu a {
+        text-decoration: none;
+    }
+    
+    #sec6MobileData button:hover {
+        color: #ff6600;
+        background: #fff;
+    }
+    /*SEC6 MOBILE CABLE SUBSTICTION*/
+    
+    #sec6CalbelSub {
+        width: 90%;
+        height: 0%;
+        border: 2px solid #fff;
+        background: #ff6600;
+        border-radius: 20px 20px 0px 0px;
+        position: absolute;
+        bottom: 0%;
+        justify-content: end;
+        overflow: hidden;
+        opacity: 0;
+        transition: all .55s ease;
+        margin-left: 2px;
+        margin-right: px;
+    }
+    
+    #sec6CalbelSub h2 {
+        color: #fff;
+        font-size: 19px;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    #sec6CalbelSub p {
+        color: #fff;
+        cursor: pointer;
+        font-size: larger;
+    }
+    
+    #sec6CalbelSub select {
+        display: block;
+        margin: 15px;
+        padding: 15px;
+        outline: none;
+        width: 88%;
+        border-radius: 10px;
+        border: none;
+        font-weight: 900;
+    }
+    
+    #sec6CalbelSub input {
+        display: block;
+        margin: 15px;
+        padding: 15px;
+        outline: none;
+        width: 81%;
+        border-radius: 10px;
+        border: none;
+        font-weight: 900;
+    }
+    
+    #sec6CalbelSub button {
+        padding: 20px;
+        width: 95%;
+        margin: 15px 15px 0px 15px;
+        border-radius: 10px;
+        border: 2px solid #fff;
+        font-size: 20px;
+        font-weight: bolder;
+        background: none;
+        color: #fff;
+        transition: all .55s ease-in-out;
+    }
+    
+    #sec6CalbelSub button:hover {
+        color: #ff6600;
+        background: #fff;
+    }
+    /*SEC LAST FOOTER*/
+    
+    #wholefooter {
+        width: 100%;
+        height: 20%;
+        overflow: hidden;
+        position: fixed;
+        top: 85%;
+        bottom: 10%;
+        background: #1b1b1b;
+        border-top: 2px solid #fff;
+        /* margin-top: 10%; */
+        transition: all .55s ease;
+    }
+    
+    #wholefooter:hover {
+        height: 30%;
+    }
+    
+    #iconside {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    
+    #iconside i {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 27px;
+        margin-top: 20px;
+        color: #fff;
+    }
+    
+    #letterside {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    
+    #letterside p {
+        margin-top: 15px;
+        text-transform: capitalize;
+        color: #fff;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    @media screen and (max-width: 700px) {
+        #sec2-ballance {
+            width: 90%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            display: block;
+        }
+        #nav {
+            width: 233px;
+            height: 100%;
+        }
+        #sec3 {
+            width: 92%;
+            height: 100%;
+        }
+        #sec6MobileData input {
+            width: 90%;
+            height: 27px;
+        }
+        #sec6MobileData select {
+            width: 90%;
+        }
+        #wholefooter {
+            width: 100%;
+            height: 20%;
+            overflow: hidden;
+            position: fixed;
+            top: 80%;
+            background: #1b1b1b;
+            border-top: 2px solid #fff;
+            margin-top: 15%;
+        }
+    }
+</style>
+
+<body id="body" onclick="body()">
+
+    <section id="theNav">
+        <nav id="nav">
+            <!-- <div id="user">
+                <i class='bx bx-user'></i>
+            </div> -->
+            <div id="navWelcome">
+                <button class="closebtn" onclick="menuoff()">&times;</button>
+                <h2>balance</h2>
+                <p id="Username">Hello</p>
+                <h1>N12.00</h1>
+                <a href="#"> <i class='bx bx-plus-circle'></i></a>
+                <a href="###"><i class='bx bx-right-arrow-alt'></i></a>
+                <a href="###"><i class='bx bx-bar-chart-alt'></i><br></a>
+
+
+            </div>
+            <div ondrag="drag()">
+                <ul id="move">
+                    <p id="title">menu</p>
+
+                    <li><a href="./data hub me.html"><i class='bx bx-home-heart'></i><span>home</span></a></li>
+                    <li class="smooth"><a href="#sec4" class="smooth"><i class='bx bxs-customize'></i><span>our services</span></a></li>
+                    <li><a href="###"><i class='bx bxs-user-account'></i><span>becomereseller</span></a></li>
+                    <li><a href="###"><i class='bx bx-user-pin'></i> <span>refer & earn</span></a></li>
+                    <li><a href="./about page data hub.html"><i class='bx bx-info-circle'></i> <span>about</span></a></li>
+
+                    <p>others</p>
+
+                    <li id="profile"><a href="###"><i class='bx bx-user'></i><span>profile</span></a>
+                        <button onclick="lightmode()" id="light"> Light mode</button>
+                        <button onclick="darkmode()" id="dark"> Dark mode</button>
+                    </li>
+
+                    <li><a href="###"><i class='bx bx-question-mark'></i><span>FAQS</span></a></li>
+                    <li><a href="###"><i class='bx bx-chat'></i><span>our blog</span></a></li>
+                    <li><a href="./email-contact page.html"><i class='bx bxl-whatsapp'></i><span>contact us</span></a></li>
+                    <li><a href="###"><i class='bx bx-log-out'></i><span>log out</span></a></li>
+                    <li><a href="###"><i class='bx bx-log-in'></i><span>log in</span></a></li>
+                    <li id="dark-side"><a href="###"><i class='bx bx-rocket'></i><span>Dark-Mode</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- <div id="blocker" onclick="menuofft()">
+        <div id="block"> -->
+
+    <div id="bodo" onclick="bobo()">
+
+        <section id="sec1-top">
+            <div id="topNav">
+                <a href="#theNav"><i onclick="menu()" id="menuBar" class='bx bx-menu'></i></a>
+                <h1>DATA-HUB</h1>
+                <a href=""><i class='bx bx-bell-plus'></i></a>
+            </div>
+        </section>
+
+        <section id="sec2-ballance">
+            <div id="ballance">
+                <h3>wallet ballance</h3>
+                <div class="i">
+                    <h2 id="wallet">₦12.00</h2>
+                    <p id="wallet"></p>
+                    <i class='bx bx-hide' onclick="eye(this)"></i>
+                </div>
+
+                <p class="line">___________________________</p>
+            </div>
+            <div>
+                <div id="funding">
+
+                    <a href="#"> <i class='bx bx-plus-circle'></i></a>
+                    <a href="###"><i class='bx bx-right-arrow-alt'></i></a>
+                    <a href="###"><i class='bx bx-bar-chart-alt'></i><br></a>
+
+                </div>
+
+                <div class="text">
+                    <p>Fund Wallet</p>
+                    <p>Transfer</p>
+                    <p>Business</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="sec3">
+            <div id="cashback">
+                <h2>MTN SME Cashack</h2>
+                <p>you will earn N5 per MTN SME GB sale</p>
+                <input type="range" placeholder="hehe">
+            </div>
+
+        </section>
+
+        <section id="sec4">
+            <div id="services">
+                <h1>our services</h1>
+
+                <div id="first-payments">
+
+
+                    <div class="btn">
+                        <p>Airtime <br> Topup</p>
+                        <a href="#sec6"><button onclick="showTopup()">buy now</button></a>
+                    </div>
+
+                    <div class="btn">
+                        <p>Mobile <br>Data</p>
+                        <a href="#sec6MobileData"><button onclick="showTopUpData()">buy now</button></a>
+                    </div>
+
+
+
+                    <div class="btn">
+                        <p>Cable <br>Subscription</p>
+                        <button onclick="showTopUpCable()">buy now</button>
+                    </div>
+
+
+
+                    </br>
+
+                    <div class="btn">
+                        <p>Ellectricity <br>Bills</p>
+                        <button>buy now</button>
+                    </div>
+
+
+                    <div class="btn">
+                        <p>Bulk <br>SMS</p>
+                        <button>buy now</button>
+                    </div>
+
+
+
+                    <div class="btn">
+                        <p>Print <br>E-Pins</p>
+                        <button>buy now</button>
+                    </div>
+
+
+                    </br>
+
+
+                    <div class="btn">
+                        <p>Edu <br>Pins</p>
+                        <button>buy now</button>
+                    </div>
+
+
+
+                    <div class="btn">
+                        <p>Stong <br>Server</p>
+                        <button>buy now</button>
+                    </div>
+
+
+
+                </div>
+        </section>
+
+        <section id="sec5">
+            <div id="transactions">
+                <div class="transac">
+                    <h1>Transactions</h1>
+                    <p onclick="view()" id="open">view all</p>
+                    <p id="close" onclick="viewoff()"></p>
+                </div>
+                <div id="mtnslot">
+                    <div class="smallmtn">
+                        <i class='bx bx-task'></i>
+                        <h5>MTN SM 1GB</h5>
+                        <p>N 1000,000</p>
+                    </div>
+                    <p>transaction succeccful</p>
+                </div>
+
+                <div id="mtnslot">
+                    <div class="smallmtn">
+                        <i class='bx bx-task'></i>
+                        <h5>GLO SM 1GB</h5>
+                        <p>N 9000,000</p>
+                    </div>
+                    <p>transaction failed</p>
+                </div>
+
+
+                <div id="show">
+
+                    <div id="mtnslot">
+                        <div class="smallmtn">
+                            <i class='bx bx-task'></i>
+                            <h5>9MOBILE SM 1GB</h5>
+                            <p>N 9000</p>
+                        </div>
+                        <p>transaction failed</p>
+                    </div>
+
+                    <div id="mtnslot">
+                        <div class="smallmtn">
+                            <i class='bx bx-task'></i>
+                            <h5>AIRTEL SM 1GB</h5>
+
+                        </div>
+                        <p>N12,000,000</p>
+                        <p>transaction succeccful</p>
+                    </div>
+
+                    <div id="mtnslot">
+                        <div class="smallmtn">
+                            <i class='bx bx-task'></i>
+                            <h5>ETICALAT SM 1GB</h5>
+                            <p>N 10,000,000</p>
+                        </div>
+                        <p>transaction succeccful</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <section id="sec6">
+            <div id="airtimeTopup">
+                <h2>buy air time</h2>
+                <p onclick="hideTopup()">&times;</p>
+
+                <p>network</p>
+                <select name="network" id="networks">
+                    <option>Mtn Airtime</option>
+                    <option>MTN Recharege Pin</option>
+                    <option>Airtel Airtime</option>
+                    <option>AIRTEL Recharge Pin</option>
+                    <option>Glo Airtime</option>
+                    <option>GLO Recharge Pin</option>
+                    <option>9mobile Airtime</option>
+                    <option>9MOBILE Recharge Pin</option>
+                </select>
+
+
+                <div id="in">
+                    <input type="tel" id="customerNo" placeholder="Recipitante.Number">
+                    <br>
+                    <input onkeyup="discount()" type="tel" id="customerPrice" placeholder="Cost Price. Min.of ₦50">
+                    <br>
+                    <input type="tel" id="discountPrice" placeholder="Min.of ₦50">
+
+                </div>
+
+                <div id=>
+                    <div id="btu">
+                        <a href=" "><button onclick="airTime()">Buy Now</button></a>
+                    </div>
+                </div>
+        </section>
+
+        <section id="sec6MobileData">
+            <h2>Buy Mobile Data</h2>
+            <p onclick="hideTopUpData()">&times;</p>
+            <select name="data" id="Data">
+                        <option value="">MTN</option>
+                        <option value="">GLO</option>
+                        <option value="">AIRTEL</option>
+                        <option value="">9MOBILE</option>
+                    </select>
+
+
+            <select name="data plan" id="DataPlan">
+                        <option value="">SME</option>
+                        <option value="">GIFTING</option>
+                        <option value="">CO-OPERATE GIFTING</option>
+                    </select>
+            <input type="tel" placeholder="Ammount Of Cost" id="ammount">
+            <input type="tel" placeholder="Input Phone Number" id="number">
+            <input type="tel" placeholder="Transaction Pin" id="pin">
+
+            <button onclick="mobiledata()">Buy Now</button>
+        </section>
+
+        <section id="sec6CalbelSub">
+            <h2>Buy Cable Subscription</h2>
+            <p onclick="hideTopUpCable()">&times;</p>
+            <select name="data" id="subbo">
+                        <option value="">Choose Cable</option>
+                        <option value="">GOTV</option>
+                        <option value="">DSTV</option>
+                        <option value="">STRONG</option>
+                </select>
+
+            <select name="data plan" id="subcription">
+                    <option value="">SME</option>
+                    <option value="">GIFTING</option>
+                    <option value="">CO-OPERATE GIFTING</option>
+                </select>
+            <input type="tel" placeholder="Ammount Of Cost" id="ammount">
+            <input type="tel" placeholder="Input ID Number" id="number">
+            <input type="tel" placeholder="Transaction Pin" id="pin">
+            <br>
+            <button onclick="CableSub()">Buy Now</button>
+        </section>
+
+        <section id="seclast-footer">
+            <div id="wholefooter">
+                <div id="iconside">
+                    <i class='bx bx-home-heart'></i>
+                    <i class='bx bxs-customize'></i>
+                    <i class='bx bx-plus-circle'></i>
+                    <i class='bx bx-chat'></i>
+                    <i class='bx bx-info-circle'></i>
+                </div>
+                <div id="letterside">
+                    <p>dashboard</p>
+                    <p>service</p>
+                    <p>fund</p>
+                    <p>live chat</p>
+                    <p>settings</p>
+                </div>
+            </div>
+        </section>
+
+
+        </div>
+    </div>
+    <!-- </div>
+    </div> -->
+
+
+    <i class='bx bx-paperclip'>
+                </i>
+
+    <box-icon name="rocket "></box-icon>
+    <box-icon type="logo " name="facebook-square "></box-icon>
+
+    <pre></pre>
+    <param name="name " value="tel ">
+    <progress aria-setsize="30px "> </progress>
+
+
+    <script>
+        //FOR THE BALLANCE
+
+        var user = document.getElementById("User").prompt("Hell waht is ur name: ");
+        user.innerHTML = "hello " + user
+
+        function eye(b) {
+            var balVal = document.getElementById("wallet").innerHTML;
+            var bal = document.getElementById("wallet");
+            if (balVal == "₦12.00") {
+                bal.innerHTML = "* * * *";
+                b.classList.toggle('bx bx-bell-plus');
+            } else {
+                bal.innerHTML = "₦12.00";
+                x.classList.toggle("bx bx-hide")
+            }
+        }
+
+
+
+        //FOR THE NAV BAR
+        function menu() {
+            var nav = document.getElementById("nav");
+            var bodo = document.getElementById("bodo");
+            var wholefooter = document.getElementById("wholefooter");
+            // var blocker = document.getElementById("blocker");
+            // var block = document.getElementById("block");
+            bodo.style.zIndex = "-1";
+            bodo.style.opacity = "0.50";
+
+            // blocker.style.zIndex = "1";
+            // blocker.style.opacity = "0.50";
+
+
+            wholefooter.style.zIndex = "-1";
+
+
+            nav.style.display = "block";
+            nav.style.transition = "0.87s";
+            nav.style.position = "fixed";
+            nav.style.opacity = "1";
+            nav.style.zIndex = "1";
+            nav.style.width = "233px";
+            nav.style.height = "100%";
+            nav.content.style.opacity = "1";
+            nav.content.style.position = "fixed";
+            nav.style.marginLeft = "50px";
+            nav.style.border = "ff6600";
+
+
+
+
+
+
+        }
+
+
+
+        function menuoff() {
+            var navOff = document.getElementById("nav");
+            var wholefooter = document.getElementById("wholefooter");
+            // var blocker = document.getElementById("blocker");
+
+            wholefooter.style.zIndex = "1";
+
+            if (navOff) {
+                nav.style.width = "0px";
+                nav.style.border = "transparent";
+                // blocker.style.zIndex = "-1";
+                // blocker.style.opacity = "1";
+
+            }
+            var body = document.getElementById("bodo").style.opacity = "1";
+
+        }
+
+
+
+        function drag() {
+            var slide = document.getElementById("move").style.position = "relative";
+
+        }
+
+        //FOR THE TRANSACTION BAR
+
+        function view() {
+            var show1 = document.getElementById("show").style.display = "block";
+            show2 = document.getElementById("close").innerHTML = "view none";
+            show2 = document.getElementById("open").style.display = "none"
+            show2 = document.getElementById("show").style.display = "block"
+
+
+        }
+
+        function viewoff() {
+            show2 = document.getElementById("close").innerHTML = "view none";
+            show2 = document.getElementById("open").style.display = "block";
+            show2 = document.getElementById("show").style.display = "none";
+
+
+        }
+
+
+        //FOR THE BUY AIRTIME BAR 
+
+        function airTime() {
+            var number = document.getElementById("customerNo").value;
+            var price = document.getElementById("customerPrice").value;
+            var network = document.getElementById("networks").value;
+            confirm("you are about to purchase " + network + " of about N" + price + " to this " + number + " number ");
+
+
+            if (number > 11 || number != 11) {
+                alert("fill prperly")
+            }
+        }
+
+        function discountPrice() {
+            var price2 = document.getElementById("discountPrice").value;
+            price2 = price2 - 50;
+        }
+
+
+        function showTopup() {
+            var sec6 = document.getElementById("sec6");
+            var wholefooter = document.getElementById("wholefooter");
+            var bodo = document.getElementById("bodo");
+
+            sec6.style.opacity = "1";
+            sec6.style.transition = "1.5s";
+            sec6.style.bottom = "0%";
+            sec6.style.height = "80%";
+            sec6.style.width = "99%";
+            sec6.style.zIndex = "1";
+            sec6.style.paddingBottom = "0%";
+            sec6.style.position = "fixed";
+
+
+            bodo.style.opacity = "0.50";
+            bodo.style.zIndex = "-1";
+
+
+            // wholefooter.style.zIndex = "-1";
+            wholefooter.style.opacity = "0";
+            wholefooter.style.display = "none";
+        }
+
+        function hideTopup() {
+            var sec6 = document.getElementById("sec6");
+            var wholefooter = document.getElementById("wholefooter");
+            var bodo = document.getElementById("bodo");
+
+            sec6.style.height = "0%";
+            sec6.style.opacity = "0";
+            sec6.style.zIndex = "-1";
+
+            bodo.style.opacity = "1";
+            // bodo.style.zIndex = "1";
+
+            wholefooter.style.opacity = "1";
+            wholefooter.style.zIndex = "1";
+            wholefooter.style.display = "block";
+
+
+
+        }
+
+        function body() {
+            var sec6 = document.getElementById("sec6");
+            sec6.style.display = "none";
+        }
+
+        function bobo1() {
+            var sec6 = document.getElementById("sec6");
+            sec6.style.display = "none";
+        }
+
+        // function bobo() {
+        //     var showtop = document.getElementById("sec6").style.display = "none"
+        // }
+
+        function cost() {
+            var discount = doucument.getElementById("customerDiscount").value;
+            var price = document.getElementById("customerPrice").value;
+            discount;
+        }
+
+
+        //LIGHT MODE
+        function lightmode() {
+            document.getElementById("body").style.backgroundColor = "#999";
+            document.getElementById("body").style.color = "red";
+            document.getElementById("sec4").style.textEmphasisColor = "red"
+        }
+
+        //
+
+        //FOR MOBILE DATA BAR
+
+
+        function showTopUpData() {
+            var sec6MobileData = document.getElementById("sec6MobileData");
+            var bodo = document.getElementById("bodo");
+            var wholefooter = document.getElementById("wholefooter");
+
+            sec6MobileData.style.opacity = "1";
+            sec6MobileData.style.transition = "1.5s";
+            sec6MobileData.style.bottom = "0%";
+            sec6MobileData.style.height = "80%";
+            sec6MobileData.style.width = "99%";
+            sec6MobileData.style.zIndex = "1";
+            sec6MobileData.style.paddingBottom = "0%";
+            sec6MobileData.style.position = "fixed";
+
+
+            bodo.style.opacity = "0.50";
+            bodo.style.zIndex = "-1";
+
+
+            // wholefooter.style.zIndex = "-1";
+            wholefooter.style.opacity = "0";
+            wholefooter.style.display = "none";
+
+        }
+
+
+        function hideTopUpData() {
+            var sec6MobileData = document.getElementById("sec6MobileData");
+            var bodo = document.getElementById("bodo");
+            var wholefooter = document.getElementById("wholefooter");
+
+
+            sec6MobileData.style.height = "80%";
+
+            document.getElementById("sec6MobileData").style.opacity = "0"
+            document.getElementById("sec6MobileData").style.zIndex = "-1"
+            document.getElementById("sec6MobileData").style.height = "0%"
+                // document.getElementById("sec6").style.display = "none"
+            document.getElementById("bodo").style.opacity = "1";
+            // document.getElementById("bodo").style.zIndex = "1";
+            document.getElementById("wholefooter").style.opacity = "1";
+            document.getElementById("wholefooter").style.zIndex = "1";
+            wholefooter.style.display = "block";
+        }
+
+        function mobiledata() {
+            var Data = document.getElementById("Data").value;
+            var DataPlan = document.getElementById("DataPlan").value;
+            var AmmountData = document.getElementById("ammount").value;
+            var NumberData = document.getElementById("number").value;
+            var PinData = document.getElementById("pin").value;
+            alert("you are about to purchase " + Data + " " + DataPlan + "of about N" + AmmountData + " to the following number " + NumberData)
+        }
+        //ENDOF MOBILE DATA
+
+
+
+
+        //CABLE SUBSCRIPTION
+        function showTopUpCable() {
+            var sec6CalbelSub = document.getElementById("sec6CalbelSub");
+            var bodo = document.getElementById("bodo");
+            var wholefooter = document.getElementById("wholefooter");
+
+            sec6CalbelSub.style.opacity = "1";
+            sec6CalbelSub.style.transition = "1.5s";
+            sec6CalbelSub.style.bottom = "0%";
+            sec6CalbelSub.style.height = "80%";
+            sec6CalbelSub.style.width = "99%";
+            sec6CalbelSub.style.zIndex = "1";
+            sec6CalbelSub.style.paddingBottom = "0%";
+            sec6CalbelSub.style.position = "fixed";
+
+
+            bodo.style.opacity = "0.50";
+            bodo.style.zIndex = "-1";
+
+
+            // wholefooter.style.zIndex = "-1";
+            wholefooter.style.opacity = "0";
+            wholefooter.style.display = "none";
+        }
+
+        function hideTopUpCable() {
+            var sec6CalbelSub = document.getElementById("sec6CalbelSub");
+            var bodo = document.getElementById("bodo");
+            var wholefooter = document.getElementById("wholefooter");
+
+
+            sec6CalbelSub.style.height = "80%";
+
+            document.getElementById("sec6CalbelSub").style.opacity = "0"
+            document.getElementById("sec6CalbelSub").style.zIndex = "-1"
+            document.getElementById("sec6CalbelSub").style.height = "0%"
+                // document.getElementById("sec6").style.display = "none"
+            document.getElementById("bodo").style.opacity = "1";
+            document.getElementById("bodo").style.zIndex = "1";
+            document.getElementById("wholefooter").style.opacity = "1";
+            // document.getElementById("wholefooter").style.zIndex = "1";
+            wholefooter.style.display = "block";
+        }
+
+
+        function CableSub() {
+            var subbo = document.getElementById("subbo").value;
+            var subcription = document.getElementById("subscription").value;
+            var Ammountsub = document.getElementById("ammount").value;
+            var Numbersub = document.getElementById("number").value;
+            var Pinsub = document.getElementById("pin").value;
+            alert("you are about to purchase " + subbo + " " + subcription + "of about N" + Ammountsub + " to the following IDnumber " + Numbersub);
+        }
+
+        //ENDOF CABLE SUBSCRIPTION
+    </script>
+</body>
+
+</html>
+
+</html>
